@@ -29,9 +29,7 @@ The Approximate Caratheodory Theorem is a centerpiece in understanding dimension
 
 ### Approximate Caratheodory Theorem
 **Statement**: For any point $x$ in the convex hull of a set $T$, you can approximate $x$ using $k$ points $x_1, x_2, \ldots, x_k$ from $T$ such that
-$$
-|x - \frac{1}{k} \sum_{i=1}^{k} x_i| \leq \frac{1}{\sqrt{2k}}.
-$$
+$$|x - \frac{1}{k} \sum_{i=1}^{k} x_i| \leq \frac{1}{\sqrt{2k}}.$$
 Importantly, $k$ is independent of the dimension, making it a dimension-free method.
 
 ### Why it Works: The Probabilistic Core
