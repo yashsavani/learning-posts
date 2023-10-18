@@ -1,0 +1,243 @@
+\documentclass[12pt]{article}
+% \usepackage[paperwidth=9cm, paperheight=16cm, margin=1cm, headheight=1cm, headsep=0.25cm, footskip=0.5cm]{geometry}
+\usepackage[letterpaper, margin=1in, headheight=15pt]{geometry}  % For letter-size paper
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{mathpazo}
+\usepackage{fancyhdr}
+
+% Spacing
+\linespread{1.25}
+
+% List Spacing
+\setlist{nolistsep}
+
+% Section Formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\itshape}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]{\bfseries\itshape}{\thesubsubsection}{1em}{}[:]
+
+% Fancy Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ACM-DS Syllabus}
+\rfoot{Page \thepage}
+
+% Link colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={ACM-DS Syllabus},
+    pdfauthor={Yash Savani},
+}
+
+
+\title{Advanced Computational Mathematics for Data Science (ACM-DS)}
+\author{Yash Savani}
+
+\begin{document}
+\maketitle
+
+\section*{Intended Audience}
+This program is designed for graduate students with a solid background in computer science and practical industry experience in machine learning. The curriculum aims to substantially augment the theoretical understanding of these students so they can engage in advanced research and make meaningful contributions to both academia and industry.
+
+\section*{Part 1: Foundational Mathematics}
+\begin{enumerate}
+    \item Core Foundations
+    \begin{itemize}
+        \item Propositional Logic, Set Theory (ZFC), Predicate Logic
+        \item Relations, Functions (Isomorphisms, Equivalence, Cardinality, Ordering)
+        \item Algebraic Structures (Magmas, Semigroups, Monoids, Groups)
+        \item Numbers (Natural numbers, Integers, Rationals, Rings, Fields)
+        \item Number Theory (Factorization, Primes, Modular Arithmetic)
+        \item Discrete Math (Combinatorics, Basic Probability, Graph Theory)
+        \item Algebra, Polynomials (Abelian Groups, Finite Fields)
+    \end{itemize}
+
+    \item Geometry 
+    \begin{itemize}
+        \item Trigonometry
+        \item Conic Sections
+        \item Explicit
+        \item Implicit
+        \item Parametric
+        \item Polyhedra
+        \item Quadric Surfaces
+    \end{itemize}
+
+    \item Group Theory 
+    \begin{itemize}
+        \item Symmetry
+        \item Cayley's Theorem
+        \item Group Actions
+        \item Subgroups
+        \item Group Homomorphisms
+        \item Lagrange's Theorem
+        \item Orbit-Stabilizer Theorem
+        \item Normal Subgroups
+        \item Quotient Groups
+        \item Isomorphism Theorems
+        \item Sylow Theorems
+    \end{itemize}
+
+    \item Linear Algebra 
+    \begin{itemize}
+        \item Vector Spaces
+        \item Matrices
+        \item Determinants
+        \item Eigenvalues
+        \item Eigenvectors
+        \item Singular Value Decomposition
+        \item Matrix Factorizations
+        \item Linear Transformations
+        \item Linear Systems
+        \item Multilinear Tensor Algebra
+    \end{itemize}
+
+    \item Real Analysis 
+    \begin{itemize}
+        \item Metric Spaces
+        \item Topology
+        \item Sequences
+        \item Series
+        \item Limits
+        \item Continuity
+        \item Differentiability
+        \item Integrability
+        \item Multivariable Calculus
+    \end{itemize}
+\end{enumerate}
+
+\section*{Part 2: Advanced Topics}
+\begin{enumerate}
+    \item Asymptotics, Dynamical Systems, PDEs
+    \item Probability Theory (Measure Theory)
+    \item Statistics 
+    \begin{itemize}
+        \item Learning Theory
+        \item Information Theory
+        \item Machine Learning
+        \item Hypothesis Testing
+    \end{itemize}
+    \item Bayesian Methods, Stochastic Processes 
+    \begin{itemize}
+        \item Markov Chains
+        \item Martingales
+        \item Brownian Motion
+        \item Stochastic Calculus
+        \item Diffusion Processes
+    \end{itemize}
+    \item Matrix Calculus, Numerical Methods 
+    \begin{itemize}
+        \item Precision
+        \item Conditioning
+        \item Root Finding
+        \item Optimization
+        \item Interpolation
+        \item Quadrature
+        \item Differential Equations
+        \item Matrix Decompositions
+        \item Iterative Methods
+        \item Monte Carlo Methods (Sketching)
+    \end{itemize}
+    \item Signal Processing 
+    \begin{itemize}
+        \item Fourier Analysis
+        \item Wavelets
+        \item Filter Banks
+        \item Sampling Theory
+        \item Shannon-Nyquist Theorem
+    \end{itemize}
+
+    \item Decision making under uncertainty: Bandits, Reinforcement Learning
+    \begin{itemize}
+        \item Markov Decision Processes
+        \item Policy Gradients
+        \item Q-Learning
+        \item Actor-Critic
+        \item Temporal Difference Learning
+        \item Model-Based RL
+        \item Inverse RL
+        \item Multi-Agent RL
+    \end{itemize}
+
+    \item Nonlinear Dynamics, Perturbation Theory 
+    \begin{itemize}
+        \item Chaos
+        \item Bifurcations
+        \item Catastrophe Theory
+    \end{itemize}
+    \item Functional Analysis (Nonparametric Methods)
+    \item Optimization Theory (Convex Optimization, Non-Convex Optimization)
+    \item High Dimensional Statistics 
+    \begin{itemize}
+        \item High Dimensional Geometry
+        \item Concentration
+        \item Metric Entropy
+        \item RMT
+        \item Functional Calculus
+        \item Chaining
+    \end{itemize}
+    \item Differential Geometry 
+    \begin{itemize}
+        \item Manifolds
+        \item Tangent Bundles
+        \item Lie Groups, Lie Algebras
+        \item Grassmann Algebras
+        \item Exterior Algebras
+        \item Differential Forms
+        \item De Rham Cohomology
+        \item Connections
+        \item Curvature
+        \item Riemannian Geometry
+        \item Symplectic Geometry
+        \item Geodesics
+    \end{itemize}
+    \item Category Theory, Type Theory, Homotopy Type Theory
+    \item Advanced Algorithms 
+    \begin{itemize}
+        \item Hashing
+        \item Integer Programming
+        \item Coding Theory
+        \item Randomized Algorithms
+        \item Approximation Algorithms
+        \item Online Algorithms
+        \item Quantum Algorithms
+    \end{itemize}
+    \item Computational Complexity Theory (Circuit Complexity, P, NP, PSPACE, L, NL, etc.)
+\end{enumerate}
+
+\section*{Additional Skills}
+\begin{itemize}
+    \item \textbf{Computer Architecture}: Superscaler CPUs, GPUs, FPGAs, ASICs, SoCs
+    \item \textbf{Systems}: Operating Systems, Networking, Security
+    \item \textbf{Deep Learning Systems}: PyTorch, JAX, CUDA, OpenCL, Metal
+    \item \textbf{Tools}:
+    \begin{itemize}
+        \item Text Editors, IDEs: vim/emacs, VSCode, CoPilot
+        \item Version Control: Git, GitHub, GitLab
+        \item Command Line Skills: Bash scripts, ssh, tmux, zsh
+        \item Linux Basics: File system, permissions, processes, systemd, cron, package management, graphics, audio, video, printing
+        \item Environment Management: conda/mamba, pip, virtualenv
+        \item Containerization: Docker, Singularity
+        \item Cloud Services: AWS, GCP, Azure
+        \item CI/CD: Automated testing and deployment
+        \item Monitoring and Logging: Grafana, Prometheus
+        \item Data Storage: SQL, NoSQL, data lakes
+        \item Data Processing: Spark, Hadoop, Hive, Pig, Kafka, Storm, Flink, Beam
+        \item Data Visualization: matplotlib, seaborn, plotly, bokeh, d3.js
+        \item Web Development: HTML, CSS, JavaScript, React, Node.js, Express.js
+        \item Mobile Development: Android, iOS, React Native, Flutter
+        \item Desktop Development: Electron
+        \item Game Development: Unity, Unreal Engine
+        \item Graphics/Vision: OpenGL, WebGL, Vulkan, DirectX, Blender, Maya, SolidWorks, OpenCV
+        \item DevOps: Kubernetes, Terraform, Ansible, Chef, Puppet
+    \end{itemize}
+\end{itemize}
+
+\end{document}
+
