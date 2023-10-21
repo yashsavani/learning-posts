@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+% \usepackage[paperwidth=9cm, paperheight=16cm, margin=1cm, headheight=1cm, headsep=0.25cm, footskip=0.5cm]{geometry}
+\usepackage[letterpaper, margin=1in, headheight=15pt]{geometry}  % For letter-size paper
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{mathpazo}
+\usepackage{fancyhdr}
+
+% Spacing
+\linespread{1.25}
+
+% List Spacing
+\setlist{nolistsep}
+
+% Section Formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\itshape}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[runin]{\bfseries\itshape}{\thesubsubsection}{1em}{}[:]
+
+% Fancy Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ACM-DS Syllabus}
+\rfoot{Page \thepage}
+
+% Link colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={ACM-DS Syllabus},
+    pdfauthor={Yash Savani},
+}
+
+
+\title{Blender}
+
+\author{%
+    Yash Savani \\
+    Computer Science Department \\
+    Carnegie Mellon University \\
+    Pittsburgh, PA 15213 \\
+    ysavani@cs.cmu.edu
+}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Blender is a powerful tool worth learning.
+
+\section{Navigation and Interface}
+\begin{itemize}
+    \item Left click to select and left click empty space to deselect.
+    \item A to select all. Alt A to deselect all.
+    \item B to box select. C to circle select. Shift + B/C to deselect.
+    \item use wireframe mode to see through objects. You can use Z to open the pi menu to select render mode.
+    \item To rotate use middle mouse button.
+    \item To pan use shift + middle mouse button.
+    \item Use period key on numpad to frame selected object.
+    \item To zoom use scroll wheel or ctrl + middle mouse button.
+    \item The camera button puts you in camera view.
+    \item the grid button switches between orthographic and perspective view.
+    \item Viewport is where you see the 3D model.
+    \item T expands the quick tools menu, which includes the tool shelf. You can also use shift + space to expand the quick tools menu where your cursor is.
+    \item N can be used to expand additional quick settings, which include object transformation data tool settings and other options.
+    \item 3D cursor is where new objects are placed and can be used as a pivot point for transformations. Use shift and right-click to place the 3D cursor. You can get further options for the cursor using shift + S.
+    \item Ctrl + scroll can be used to zoom in and out of the timeline.
+    \item Collections contains all the objects in the scene. Layers or groups in other software.
+        \begin{itemize}
+            \item Right-click and select move to collection to move an object to a collection.
+        \end{itemize}
+    \item Properties tab containes properties for selected tool and object.
+        \begin{itemize}
+            \item Tool tab contains properties for the selected tool.
+            \item Render tab contains properties for rendering.
+            \item Output tab contains properties for outputting the render.
+            \item View layer tab contains properties for the view layer to separate background and character passes.
+            \item Globe tab contains properties for the world (sky and fog or mist).
+            \item Object data tab contains properties for the object (SE(3), parent child relationship, which collections it belongs to and visibility).
+            \item Modifiers tab contains properties for the modifiers applied to the object.
+            \item Particles tab contains properties for the particles applied to the object.
+            \item Physics tab contains properties for the physics applied to the object.
+            \item Object constraints tab contains properties for the constraints applied to the object.
+            \item Mesh data tab contains properties for the mesh data of the object (geometry).
+            \item Material tab contains properties for the material of the object.
+            \item Texture tab contains properties for the texture of the object.
+            \item Lamp data tab contains properties for the lamp data of the object.
+            \item Camera data tab contains properties for the camera data of the object.
+        \end{itemize}
+    \item To translate object use G. To rotate object use R. To scale object use S.
+    \item Use X, Y, Z to constrain transformations to the respective axis and shift X, Y, Z to move in the plane orthogonal to the axis.
+    \item Use magnet icon to toggle snapping.
+    \item shift + A to add new object at the cursor.
+    \item shift + D to duplicate selected object.
+    \item X to delete selected object.
+    \item Tab to toggle edit mode.
+    \item X in edit mode to delete specific geometry.
+        \begin{itemize}
+            \item If you delete vertices, you will delete connecting edges and faces.
+            \item If you delete edges, you will delete connecting faces but not vertices.
+            \item If you delete faces, you will not delete boundary edges or vertices.
+            \item Vertices > Edges > Faces.
+            \item dissolve vertices/edges/faces to remove them without changing the shape of the object.
+            \item edge collapse to remove an edge and merge the vertices at the ends of the edge.
+            \item edge loops are the functional inverse of an extrusion.
+        \end{itemize}
+\end{itemize}
+
+\section{Modelling}
+Manipulating meshes to create geometry.
+\begin{itemize}
+    \item In edit mode, you can select vertices, edges, and faces.
+    \item In object mode, you can select objects.
+    \item Armatures also have an edit mode.
+    \item You can edit multiple objects at once.
+    \item If you want to connect multiple objects use join in the object menu or use Ctrl + J.
+    \item You can separate objects using seperate in the object menu.
+    \item You can select the mode of the object using options in the top toolbar. You can select more than one at a time. 1, 2, 3 keys can be used to switch between modes. Shift + 1, 2, 3 can be used to select multiple modes.
+    \item Alt + left click to select loops. In vertex and edge mode, the loop is along the edge selected. In face mode, the loop is perpendicular to the edge of the face selected.
+    \item Extrude tool can be used to extrude faces.
+    \item Extrue along normals can be used to extrude along the normal of all selected faces but still keep the faces connected.
+    \item The loop cut tool can be used to add a loop cut to the mesh. You can use scroll wheel to add more loop cuts. Use ctrl + R to activate the tool.
+    \item You can use the bevel tool to create a chamfer. Use ctrl + B to activate the tool.
+    \item You can use the knife tool to cut the mesh. Use K to activate the tool. Double left click to restart the knife selection. right-click to cancel. Enter to confirm.
+\end{itemize}
+\end{document}
